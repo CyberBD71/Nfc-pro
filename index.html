@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Md Imteaz Hashem Arfat | Mobile Technician &amp; Freelancer — NFC Digital Card</title>
+
+  <!-- ===== SEO ===== -->
+  <meta name="description" content="Official NFC digital business card of Md Imteaz Hashem Arfat — Mobile Technician &amp; Freelancer in Baluchara, Chattogram, Bangladesh. Mobile repair, software flash, FRP unlock, display &amp; battery replacement, accessories and freelancing services.">
+  <meta name="keywords" content="Imteaz Arfat, Mobile Technician Chattogram, Mobile Repair Bangladesh, FRP Unlock, Software Flash, Display Replacement, NFC Digital Business Card, Baluchara Chattogram">
+  <meta name="author" content="Md Imteaz Hashem Arfat">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://imteazarfat.github.io/">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Md Imteaz Hashem Arfat | Mobile Technician &amp; Freelancer">
+  <meta property="og:description" content="NFC Digital Business Card — Mobile repair, software flash, FRP unlock &amp; freelancing services in Chattogram, Bangladesh.">
+  <meta property="og:image" content="picture.jpg">
+  <meta property="og:url" content="https://imteazarfat.github.io/">
+  <meta property="og:site_name" content="Imteaz Arfat — Digital Card">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Md Imteaz Hashem Arfat | Mobile Technician &amp; Freelancer">
+  <meta name="twitter:description" content="NFC Digital Business Card — Mobile repair, software flash, FRP unlock &amp; freelancing services in Chattogram, Bangladesh.">
+  <meta name="twitter:image" content="picture.jpg">
+
+  <!-- ===== Favicon / PWA ===== -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&amp;family=Rajdhani:wght@400;500;600;700&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== SPLASH SCREEN ===================== -->
+  <div id="splash" class="splash">
+    <div class="splash-inner">
+      <div class="splash-ring">
+        <div class="splash-ring__core"></div>
+      </div>
+      <p class="splash-brand">IMTEAZ <span>ARFAT</span></p>
+      <p class="splash-tag">NFC DIGITAL CARD</p>
+      <div class="splash-bar"><span id="splashProgress"></span></div>
+    </div>
+  </div>
+
+  <!-- ===================== PARTICLE BACKGROUND ===================== -->
+  <canvas id="particles"></canvas>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== MOBILE NAV TOGGLE ===================== -->
+  <header class="topbar">
+    <a href="#hero" class="topbar__logo">IA<span>.</span></a>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav id="mobileNav" class="mobile-nav">
+    <a href="#hero" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#socials" class="nav-link">Socials</a>
+    <a href="#qr" class="nav-link">QR Code</a>
+    <a href="#location" class="nav-link">Location</a>
+  </nav>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" class="hero">
+      <div class="hero__card glass" data-aos>
+        <div class="hero__ring">
+          <div class="hero__pulse"></div>
+          <div class="hero__pulse hero__pulse--delay"></div>
+          <img src="picture.jpg" alt="Md Imteaz Hashem Arfat profile photo" class="hero__photo" width="220" height="220">
+          <span class="hero__nfc-badge" title="NFC Enabled">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 8a6 6 0 0 1 8.49 0M8.5 10.5a2.5 2.5 0 0 1 3.54 0M4 5.5a10 10 0 0 1 14.14 0"/>
+              <circle cx="10" cy="13" r="1.4" fill="currentColor" stroke="none"/>
+            </svg>
+            NFC
+          </span>
+        </div>
+
+        <h1 class="hero__name">Md Imteaz Hashem Arfat</h1>
+        <p class="hero__title">
+          <span id="typedTitle" class="typed"></span><span class="cursor">|</span>
+        </p>
+
+        <p class="hero__location">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Baluchara, Chattogram, Bangladesh
+        </p>
+
+        <div class="hero__cta">
+          <a href="tel:01621803362" class="btn btn--primary ripple">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+            Save Contact
+          </a>
+          <a href="#contact" class="btn btn--ghost ripple">Get In Touch</a>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span></span> Scroll
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="section__head" data-aos="fade-up">
+        <span class="eyebrow">// About Me</span>
+        <h2 class="section__title">Precision Repairs, <span class="text-accent">Trusted</span> Service</h2>
+      </div>
+
+      <div class="about__wrap">
+        <div class="about__card glass" data-aos="fade-right">
+          <p>
+            I'm <strong>Md Imteaz Hashem Arfat</strong>, a dedicated Mobile Technician and Freelancer based in
+            Baluchara, Chattogram, Bangladesh. I specialize in diagnosing and repairing smartphones with speed
+            and precision — from hardware fixes like display and battery replacement to advanced software
+            solutions such as flashing and FRP unlocking.
+          </p>
+          <p>
+            Alongside my repair work, I take on freelancing projects, helping clients with reliable,
+            tech-driven solutions. My goal is simple: fast turnaround, honest pricing, and devices that work
+            like new. This digital card is my always-on business card — tap, scan, or click to connect
+            instantly.
+          </p>
+        </div>
+
+        <div class="about__stats" data-aos="fade-left">
+          <div class="stat glass">
+            <span class="stat__num" data-count="6">0</span><span class="stat__suffix">+</span>
+            <p class="stat__label">Years Experience</p>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num" data-count="1200">0</span><span class="stat__suffix">+</span>
+            <p class="stat__label">Devices Repaired</p>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num" data-count="98">0</span><span class="stat__suffix">%</span>
+            <p class="stat__label">Client Satisfaction</p>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num" data-count="24">0</span><span class="stat__suffix">/7</span>
+            <p class="stat__label">Support Availability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT BUTTONS ===================== -->
+    <section id="contact" class="section">
+      <div class="section__head" data-aos="fade-up">
+        <span class="eyebrow">// Get In Touch</span>
+        <h2 class="section__title">Let's <span class="text-accent">Connect</span></h2>
+      </div>
+
+      <div class="contact__grid" data-aos="fade-up">
+        <a href="tel:01621803362" class="contact__btn glass ripple">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+          </span>
+          <span class="contact__text">
+            <strong>Call Now</strong>
+            <small>01621803362</small>
+          </span>
+        </a>
+
+        <a href="https://wa.me/8801797227302" target="_blank" rel="noopener" class="contact__btn glass ripple">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </span>
+          <span class="contact__text">
+            <strong>WhatsApp</strong>
+            <small>01797227302</small>
+          </span>
+        </a>
+
+        <a href="mailto:Imteaz2332@gmail.com" class="contact__btn glass ripple">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          </span>
+          <span class="contact__text">
+            <strong>Email</strong>
+            <small>Imteaz2332@gmail.com</small>
+          </span>
+        </a>
+
+        <a href="https://www.facebook.com/md.imteazarfat" target="_blank" rel="noopener" class="contact__btn glass ripple">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </span>
+          <span class="contact__text">
+            <strong>Facebook</strong>
+            <small>md.imteazarfat</small>
+          </span>
+        </a>
+
+        <button type="button" class="contact__btn glass ripple" data-copy="01621803362" data-label="Phone">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </span>
+          <span class="contact__text">
+            <strong>Copy Phone</strong>
+            <small>Tap to copy number</small>
+          </span>
+        </button>
+
+        <button type="button" class="contact__btn glass ripple" data-copy="Imteaz2332@gmail.com" data-label="Email">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </span>
+          <span class="contact__text">
+            <strong>Copy Email</strong>
+            <small>Tap to copy address</small>
+          </span>
+        </button>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Baluchara%2C+Chattogram%2C+Bangladesh" target="_blank" rel="noopener" class="contact__btn glass ripple contact__btn--wide">
+          <span class="contact__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </span>
+          <span class="contact__text">
+            <strong>Open Location</strong>
+            <small>Baluchara, Chattogram, Bangladesh</small>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="section">
+      <div class="section__head" data-aos="fade-up">
+        <span class="eyebrow">// What I Do</span>
+        <h2 class="section__title">My <span class="text-accent">Services</span></h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          </div>
+          <h3>Mobile Repair</h3>
+          <p>Full diagnostics and hardware repair for all major smartphone brands and models.</p>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3H5a2 2 0 0 0-2 2v3m0 8v3a2 2 0 0 0 2 2h3m8-18h3a2 2 0 0 1 2 2v3m0 8v3a2 2 0 0 1-2 2h-3"/><path d="M8 12h8"/></svg>
+          </div>
+          <h3>Software Flash</h3>
+          <p>Firmware flashing, ROM updates and software troubleshooting to restore full performance.</p>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>FRP Unlock</h3>
+          <p>Fast and secure Factory Reset Protection removal to regain full access to your device.</p>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 15l4-4 3 3 5-6 4 5"/></svg>
+          </div>
+          <h3>Display Replacement</h3>
+          <p>Original-quality screen replacements with precise fitting and touch calibration.</p>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="7" width="10" height="16" rx="2"/><path d="M10 3h4v4h-4z"/></svg>
+          </div>
+          <h3>Battery Replacement</h3>
+          <p>Genuine battery replacement to bring back safe, long-lasting power performance.</p>
+        </div>
+
+        <div class="service-card glass" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3>Mobile Accessories</h3>
+          <p>Chargers, cables, cases and quality accessories for everyday device protection.</p>
+        </div>
+
+        <div class="service-card glass service-card--wide" data-aos="fade-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 18a4 4 0 0 0-8 0"/><circle cx="12" cy="10" r="3"/><path d="M2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0z"/></svg>
+          </div>
+          <h3>Freelancing Services</h3>
+          <p>Available for remote tech support and freelance projects — reliable, on-time delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOCIAL LINKS ===================== -->
+    <section id="socials" class="section">
+      <div class="section__head" data-aos="fade-up">
+        <span class="eyebrow">// Stay Connected</span>
+        <h2 class="section__title">Social <span class="text-accent">Links</span></h2>
+      </div>
+
+      <div class="socials__row" data-aos="fade-up">
+        <a href="https://www.facebook.com/md.imteazarfat" target="_blank" rel="noopener" class="social-orb glass ripple" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/8801797227302" target="_blank" rel="noopener" class="social-orb glass ripple" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+        <a href="mailto:Imteaz2332@gmail.com" class="social-orb glass ripple" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+        <a href="tel:01621803362" class="social-orb glass ripple" aria-label="Call">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== QR CODE ===================== -->
+    <section id="qr" class="section">
+      <div class="section__head" data-aos="fade-up">
+        <span class="eyebrow">// Tap Or Scan</span>
+        <h2 class="section__title">Scan My <span class="text-accent">QR Code</span></h2>
+      </div>
+
+      <div class="qr__card glass" data-aos="zoom-in">
+        <div class="qr__frame">
+          <div id="qrcode" class="qr__code" aria-label="QR code linking to contact card"></div>
+          <span class="qr__corner qr__corner--tl"></span>
+          <span class="qr__corner qr__corner--tr"></span>
+          <span class="qr__corner qr__corner--bl"></span>
+          <span class="qr__corner qr__corner--br"></span>
+          <span class="qr__scanline"></span>
+        </div>
+        <p class="qr__hint">Scan to save my contact instantly to your phone</p>
+        
+      </div>
+    </section>
+
+    <!-- ===================== GOOGLE MAPS ===================== -->
+    <section id="location" class="section">
+      <div class="section__head" data-aos="fade-up">
+        <span class="eyebrow">// Find Me</span>
+        <h2 class="section__title">My <span class="text-accent">Location</span></h2>
+      </div>
+
+      <div class="map__card glass" data-aos="fade-up">
+        <p class="map__address">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Baluchara, Chattogram, Bangladesh
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Baluchara%2C+Chattogram%2C+Bangladesh" target="_blank" rel="noopener" class="btn btn--primary ripple">
+          Open in Google Maps
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__logo">IMTEAZ <span>ARFAT</span></div>
+    <p class="footer__role">Mobile Technician | Freelancer</p>
+    <div class="footer__links">
+      <a href="tel:01621803362" aria-label="Call">Call</a>
+      <a href="https://wa.me/8801797227302" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+      <a href="mailto:Imteaz2332@gmail.com" aria-label="Email">Email</a>
+      <a href="https://www.facebook.com/md.imteazarfat" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+    </div>
+    <p class="footer__copy">&copy; <span id="year"></span> Md Imteaz Hashem Arfat. All rights reserved.</p>
+    <p class="footer__made">Digital NFC Business Card</p>
+  </footer>
+
+  <!-- ===================== FLOATING ACTION BUTTON ===================== -->
+  <div class="fab" id="fab">
+    <button class="fab__main ripple" id="fabToggle" aria-label="Quick actions">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <a href="tel:01621803362" class="fab__item ripple" style="--i:1" aria-label="Call">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+    </a>
+    <a href="https://wa.me/8801797227302" target="_blank" rel="noopener" class="fab__item ripple" style="--i:2" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </a>
+    <a href="mailto:Imteaz2332@gmail.com" class="fab__item ripple" style="--i:3" aria-label="Email">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+    </a>
+  </div>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ===================== TOAST ===================== -->
+  <div id="toast" class="toast"></div>
+
+  <!-- QR code generation library (lightweight, MIT licensed) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
